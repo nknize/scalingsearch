@@ -319,7 +319,7 @@ function ReviewerSignup(): ReactNode {
           </div>
           <form
             className={styles.signupForm}
-            action="https://formspree.io/f/your-form-id"
+            action="https://formspree.io/f/xbddjnov"
             method="POST"
           >
             <div className={styles.formRow}>
