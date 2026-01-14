@@ -159,7 +159,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nick Knize. Published by O'Reilly Media.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Nicholas Knize, PhD`,
     },
     prism: {
       theme: prismThemes.github,

@@ -231,7 +231,7 @@ function AboutAuthor(): ReactNode {
           </div>
           <div className={styles.authorText}>
             <Heading as="h2">About the Author</Heading>
-            <p className={styles.authorName}>Nick Knize</p>
+            <p className={styles.authorName}>Nicholas Knize, PhD</p>
             <p>
               Nick Knize is a seasoned software engineer and architect with deep expertise in search
               and distributed systems. As a core contributor to open-source search technologies and
