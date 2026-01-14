@@ -1,0 +1,538 @@
+/**
+ * Landing page styles for Scaling Search and Retrieval book
+ */
+
+/* Hero Section */
+.heroBanner {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.publisherBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.publisherIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.heroTitle {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.heroSubtitle {
+  font-size: 1.4rem;
+  color: #64b5f6;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Hero section secondary button - white border on dark background */
+.heroButtons :global(.button--secondary) {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.heroButtons :global(.button--secondary:hover) {
+  background: white;
+  color: #1a1a2e;
+}
+
+.heroImage {
+  flex-shrink: 0;
+}
+
+.bookCover {
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.bookCover:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 1rem;
+  }
+
+  .heroContent {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .bookCover {
+    max-width: 250px;
+    transform: none;
+  }
+}
+
+/* About Book Section */
+.aboutSection {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.aboutContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutContent h2 {
+  margin-bottom: 1.5rem;
+}
+
+.aboutLead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.aboutContent > p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+.aboutHighlight {
+  font-style: italic;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.learningPoints {
+  text-align: left;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.learningPoints h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.learningPoints ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.learningPoints li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.learningPoints li:last-child {
+  margin-bottom: 0;
+}
+
+/* Target Audience Section */
+.audienceSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.audienceGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.audienceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  min-width: 200px;
+  flex: 0 1 auto;
+}
+
+.audienceCard strong {
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.audienceCard span {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.learnSubheading {
+  color: var(--ifm-color-primary);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-600);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.featureCol {
+  margin-bottom: 2rem;
+}
+
+.featureCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.featureCard p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Author Section */
+.authorSection {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.authorContent {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.authorImageWrapper {
+  flex-shrink: 0;
+}
+
+.authorImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.authorText {
+  flex: 1;
+}
+
+.authorText h2 {
+  margin-bottom: 0.5rem;
+}
+
+.authorName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.authorText p {
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media screen and (max-width: 768px) {
+  .authorContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .authorImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Lucenia Section */
+.luceniaSection {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+}
+
+.luceniaContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.luceniaText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.luceniaText h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.luceniaText p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+}
+
+.luceniaButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.luceniaLogo {
+  flex-shrink: 0;
+}
+
+.luceniaLogoImage {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 1.5rem;
+}
+
+/* Lucenia section button overrides */
+.luceniaButtons :global(.button--primary) {
+  background: white;
+  color: #1e3c72;
+  border: none;
+}
+
+.luceniaButtons :global(.button--primary:hover) {
+  background: #f0f0f0;
+  color: #1e3c72;
+}
+
+.luceniaButtons :global(.button--secondary) {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.luceniaButtons :global(.button--secondary:hover) {
+  background: white;
+  color: #1e3c72;
+}
+
+/* Dark mode: ensure primary buttons have white text */
+:global([data-theme='dark']) .luceniaButtons :global(.button--primary) {
+  background: white;
+  color: #1e3c72;
+}
+
+:global([data-theme='dark']) .luceniaButtons :global(.button--primary:hover) {
+  background: #f0f0f0;
+  color: #1e3c72;
+}
+
+@media screen and (max-width: 996px) {
+  .luceniaContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .luceniaButtons {
+    justify-content: center;
+  }
+
+  .luceniaLogoImage {
+    max-width: 250px;
+  }
+}
+
+/* Reviewer Signup Section */
+.reviewerSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.reviewerContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviewerContent h2 {
+  margin-bottom: 1rem;
+}
+
+.reviewerDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.reviewerBenefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.benefitItem strong {
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+}
+
+.benefitItem span {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.signupForm {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formRow:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.formInput,
+.formTextarea {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  transition: border-color 0.2s ease;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .reviewerBenefits {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

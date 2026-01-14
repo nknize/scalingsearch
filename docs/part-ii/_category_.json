@@ -1,0 +1,9 @@
+{
+  "label": "Part II: Scaling Outward",
+  "position": 3,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to scale search horizontally through sharding, distributed query coordination, and snapshot strategies for durability and recovery."
+  }
+}

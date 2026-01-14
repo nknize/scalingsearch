@@ -1,0 +1,34 @@
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Book and site announcements
+
+search:
+  label: Search
+  permalink: /search
+  description: Search engine concepts and implementation
+
+ai:
+  label: AI
+  permalink: /ai
+  description: AI and machine learning topics
+
+distributed-systems:
+  label: Distributed Systems
+  permalink: /distributed-systems
+  description: Distributed systems architecture
+
+vector-search:
+  label: Vector Search
+  permalink: /vector-search
+  description: Vector and semantic search
+
+rag:
+  label: RAG
+  permalink: /rag
+  description: Retrieval-augmented generation
+
+chapter-preview:
+  label: Chapter Preview
+  permalink: /chapter-preview
+  description: Previews of upcoming chapters

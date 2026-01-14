@@ -1,0 +1,10 @@
+nknize:
+  name: Nick Knize
+  title: CEO & Founder, Lucenia | Creator of AWS OpenSearch
+  url: https://lucenia.io
+  image_url: /img/author-photo.png
+  email: nick@lucenia.io
+  page: true
+  socials:
+    github: nknize
+    linkedin: nknize

@@ -1,0 +1,9 @@
+{
+  "label": "Part I: Search Fundamentals",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Understand the foundational concepts of search engines—from core data structures and indexing pipelines to query execution and the write path."
+  }
+}

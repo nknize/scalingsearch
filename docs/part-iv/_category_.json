@@ -1,0 +1,9 @@
+{
+  "label": "Part IV: Deploying and Operating a Search Platform",
+  "position": 5,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Cover deployment patterns, security, observability, cost optimization, and disaster recovery for production search systems."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Part III: Modern Retrieval and AI Integration",
+  "position": 4,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Dive into hybrid search, vector indexing, RAG pipelines, and multimodal retrieval for AI-native applications."
+  }
+}
